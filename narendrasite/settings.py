@@ -44,7 +44,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['heroku.com', 'narendrasingh.co', 'www.narendrasingh.co' 'narendrasingh.herokuapp.com']
+ALLOWED_HOSTS = ['heroku.com', 'narendrasingh.co', 'www.narendrasingh.co', 'narendrasingh.herokuapp.com']
 
 # remember in development with these the development server will not be able to serve static files
 SECURE_HSTS_PRELOAD = True
@@ -144,6 +144,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'portfolio/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
 
 #managing media
 import os
