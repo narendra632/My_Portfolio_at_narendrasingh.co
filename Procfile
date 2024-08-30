@@ -1,0 +1,1 @@
+web gunicorn narendrasite.wsgi.application --log-file -
