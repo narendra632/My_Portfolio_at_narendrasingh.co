@@ -1,1 +1,1 @@
-web gunicorn narendrasite.wsgi:application --log-file -
+web gunicorn narendrasite.wsgi:application --preload --log-file -
