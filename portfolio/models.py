@@ -1,4 +1,6 @@
 from django.db import models
+from django.utils import timezone
+
 
 
 class About(models.Model):
@@ -81,6 +83,7 @@ class Portfolio(models.Model):
     project_date = models.CharField(max_length=100, default="")
     project_URL = models.CharField(max_length=200,default="")
     description = models.TextField(default="")
+    created_at = models.DateTimeField(default=timezone.now, blank=True) 
 
     def __str__(self):
         return self.description

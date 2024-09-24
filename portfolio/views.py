@@ -31,7 +31,7 @@ def index(request):
     skills = Skill.objects.all()
     education = Education.objects.all()
     experience = Experience.objects.all()
-    portfolio = Portfolio.objects.all()
+    portfolio = Portfolio.objects.all().order_by('-created_at')
     services = Service.objects.all()
     return render(request, "index.html", {'about': about, 'social': social, 'skills': skills, 'education': education, 'experience': experience, 'portfolio': portfolio, 'services': services})
 
