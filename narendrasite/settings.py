@@ -44,7 +44,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['heroku.com', 'narendrasingh.co', 'www.narendrasingh.co', 'narendrasingh.herokuapp.com']
+ALLOWED_HOSTS = ['heroku.com', 'narendrasingh.co', 'www.narendrasingh.co', 'narendrasingh.herokuapp.com', 'narendrasingh.onrender.com', 'https://narendrasingh.onrender.com']
 
 # remember in development with these the development server will not be able to serve static files
 SECURE_HSTS_PRELOAD = True
